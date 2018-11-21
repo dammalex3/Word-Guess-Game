@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Word Guess Game</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+    
+    <div class="jumbotron text-center">
+        <h1 class="display-4">Word Guess: NFL Edition</h1>
+        <hr class="my-4">
+        <p class="lead">Guess the NFL team mascot</p>
+    </div>
+
+    <!--HTML-->
+    <div class="container">
+        <div class="row main-game">
+            <!-- <img id="teams" src="assets/images/full-field.jpg"> -->
+            <div class="col-md-7 guess-area col-centered text-center">
+                <div id="word-area">
+                    <h3 id="guessedword-text"></h3>
+                </div>
+                <div id="game-stats">
+                    <p>Letters Guessed: <span id="wrong-guess-text"></span></p>
+                    <p id="guesses-remaining-text"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+
+    <!--Javascript-->
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+
+</html>

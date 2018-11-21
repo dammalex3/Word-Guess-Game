@@ -1,0 +1,62 @@
+
+body {
+    /* background-image: url("../images/full-field.jpg");
+    /* background-repeat: no-repeat;
+    background-size: 100% 100%; */
+}
+
+.jumbotron {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: none;
+}
+
+.main-game {
+    border-style: groove;
+    border-color: rgb(163, 161, 161);
+    height: 450px;
+    background-image: url("../images/nfl.jpg");
+}
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
+.guesses {
+    float: right;
+}
+
+#guessedword-text {
+    font-size: 36pt;
+    letter-spacing: 4px;
+}
+
+
+.word-guess-area {
+    padding-top: 30px;
+}
+
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+ }
+
+ .guess-area {
+     background-color: white;
+     margin-top: 20px;
+     margin-bottom: 20px;
+     border: 1px solid grey;
+ }
+
+ #game-stats {
+     margin-top: 100px;
+     border-top: 2px dotted;
+     padding-top: 30px;
+     font-size: 16pt;
+ }
+ 
+ #word-area {
+     margin-top: 80px;
+ }
