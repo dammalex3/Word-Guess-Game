@@ -79,12 +79,14 @@ document.onkeyup = function(event) {
 
     //check if word is correct and reset the game if it is
     if (guessedWord.join("") === magicWord.join("")) {
-        
+
         //reset the game
         magicWord = pickWord(words);
         guessedWord = generateDashed(magicWord);
         wrongGuesses = [];
         guessesRemaining = 10;
+        document.getElementById("win-loss").textContent = "";
+        document.getElementById("instructions").textContent = "";
     }
 
     else {
@@ -108,8 +110,8 @@ document.onkeyup = function(event) {
                     //tell the user they won and reset the game
                     var guessedWordText = document.getElementById("guessedword-text");
                     guessedWordText.textContent = guessedWord.join("  ");
-                    var winLossText = document.getElementById("win-loss");
-                    alert("YOU WIN!!");
+                    document.getElementById("win-loss").textContent = "YOU WIN!";
+                    document.getElementById("instructions").textContent = "Press any key to play again.";
                     guessedWord = magicWord;
                 }
             }
@@ -125,7 +127,8 @@ document.onkeyup = function(event) {
 
                 //when the user is out of guesses alert them and reset the game
                 if (guessesRemaining === 0) {
-                    alert("GAME OVER");
+                    document.getElementById("win-loss").textContent = "You Lose!";
+                    document.getElementById("instructions").textContent = "Press any key to play again.";
                     guessedWord = magicWord;
                 }
             }
